@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkVibe Detailing | Premium Mobile Car Detailing in Kandy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #e94560;
+            --light: #f8f4f4;
+            --dark: #0f0e17;
+            --gold: #ffd700;
+            --success: #2ecc71;
+            --mobile-bg: #2a3f54;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        h1, h2, h3, h4 {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        h1 { font-size: 2.8rem; }
+        h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+        h4 { font-size: 1.2rem; margin-bottom: 0.8rem; }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: #c2334d;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-gold {
+            background: var(--gold);
+            color: var(--dark);
+        }
+        
+        .btn-gold:hover {
+            background: #e6c200;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .notice-box {
+            background-color: rgba(233, 69, 96, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        .gold-text {
+            color: var(--gold);
+        }
+        
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        
+        .logo-main {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        
+        .logo-sub {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(5, 5, 10, 0.4), rgba(5, 5, 10, 0.4)), 
+                        url('https://images.unsplash.com/photo-1607860108855-64acf2078ed9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        /* Intro Section */
+        .intro {
+            background: white;
+            padding: 3rem 0;
+        }
+        
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .intro-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+        }
+        
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            background: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+        
+        /* Services */
+        .services {
+            background: var(--light);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .service-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-content {
+            padding: 1.5rem;
+        }
+        
+        .service-content h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .service-time {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .price {
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        
+        .service-features {
+            margin: 1rem 0;
+        }
+        
+        .service-features li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .service-features li:before {
+            content: "✓";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Pricing Table */
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .pricing-table th, .pricing-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .pricing-table th {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .pricing-table tr:hover {
+            background: #f9f9f9;
+        }
+        
+        /* Partners */
+        .partners {
+            background: white;
+        }
+        
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .partner-logo {
+            max-width: 150px;
+            height: auto;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+        
+        .partner-logo:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        
+        /* FAQ */
+        .faq {
+            background: var(--light);
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            background: var(--primary);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 1.5rem;
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        /* Live Chat */
+        .live-chat {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+        }
+        
+        .chat-btn {
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .chat-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Mobile Detailing Section */
+        .mobile-detailing {
+            background: var(--mobile-bg);
+            color: white;
+        }
+        
+        .mobile-detailing h2 {
+            color: white;
+        }
+        
+        .mobile-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .step-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .step-card:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        /* Video Section */
+        .video-section {
+            background: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 800px;
+            margin: 2rem auto;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Contact */
+        .contact {
+            background: linear-gradient(135deg, #f8f4f4 0%, #e6e6e6 100%);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            margin-right: 1rem;
+            color: var(--accent);
+            font-size: 1.2rem;
+            min-width: 20px;
+        }
+
+        /* Form Elements */
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            border-color: var(--accent);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.2);
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        /* Price Display */
+        .price-display {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 1rem 0;
+            display: none;
+        }
+        
+        .price-display.active {
+            display: block;
+        }
+        
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-total {
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-top: 1px solid #eee;
+            padding-top: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        /* Submission Message */
+        .submission-message {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(46, 204, 113, 0.1);
+            border-radius: 5px;
+            border-left: 4px solid var(--success);
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        .submission-message p {
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Payment Info Section */
+        .payment-info {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-col h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        /* Social Media Icons */
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            color: #000;
+            background: rgba(255,255,255,0.9);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-img {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .about-img {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                transition: all 0.5s ease;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 1rem 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+            
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.8rem;
+            }
+            
+            .service-card,
+            .step-card {
+                padding: 1.5rem;
+            }
+            
+            .logo-text {
+                display: none;
+            }
+            
+            .intro-icons {
+                gap: 1rem;
+            }
+            
+            .icon-item {
+                width: 100px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <img src="images/123.png" alt="SparkVibe Detailing Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-main">SparkVibe</span>
+                    <span class="logo-sub">Detailing</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#mobile">Mobile Service</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="btn">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Shine Anywhere, Anytime!</h1>
+                <p>Premium mobile car detailing services in Kandy, delivered to your doorstep</p>
+                <a href="#contact" class="btn btn-gold">Book Your Mobile Detailing Now!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>SparkVibe Detailing</h2>
+                <p>SparkVibe Detailing is a mobile car detailing service in Kandy, bringing premium vehicle care to your doorstep.</p>
+                
+                <div class="intro-icons">
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <span>Exterior</span>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <span>Interior</span>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span>Protection</span>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <span>Fleet Services</span>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="btn">Get a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="text-center">
+                <h2>Our <span class="gold-text">Services</span></h2>
+                <p>Premium detailing packages tailored to your vehicle's needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1607860108855-64acf2078ed9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+                    <div class="service-content">
+                        <h3><i class="fas fa-car-side"></i> Deluxe Wash</h3>
+                        <div class="service-time">
+                            <i class="fas fa-clock"></i> ⏱ Time: 1-2 Hours
+                        </div>
+                        <div class="price">Price: LKR 13,500-19,500</div>
+                        <div class="service-features">
+                            <ul>
+                                <li>Exterior Hand Wash</li>
+                                <li>Towel Hand Dry</li>
+                                <li>Interior wipe and vacuuming</li>
+                                <li>Wheel & Tire deep cleaning</li>
+                                <li>Tire Dressing</li>
+                                <li>Windows In & Out with Rain-X</li>
+                                <li>Air freshener application</li>
+                                <li>Door Shuts & Plastics</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80');"></div>
+                    <div class="service-content">
+                        <h3><i class="fas fa-star"></i> Ultimate Shine</h3>
+                        <div class="service-time">
+                            <i class="fas fa-clock"></i> ⏱ Time: 4 Hours
+                        </div>
+                        <div class="price">Price: LKR 34,990-50,990</div>
+                        <div class="service-features">
+                            <ul>
+                                <li>Exterior ceramic-Infused Hand Wash</li>
+                                <li>Towel Hand Dry</li>
+                                <li>Sealer Hand Wax (6-Month Protection)</li>
+                                <li>Wheel & Tire Ceramic Glow</li>
+                                <li>Windows In/Out with Rain-X</li>
+                                <li>Full Interior Clean</li>
+                                <li>Leather Ceramic Guard</li>
+                                <li>Dashboard & Trim UV Defense</li>
+                                <li>Door Shuts & Plastics Revival</li>
+                                <li>Air Freshener</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');"></div>
+                    <div class="service-content">
+                        <h3><i class="fas fa-crown"></i> Platinum Works</h3>
+                        <div class="service-time">
+                            <i class="fas fa-clock"></i> ⏱ Time: 6 Hours
+                        </div>
+                        <div class="price">Price: LKR 63,990-82,990</div>
+                        <div class="service-features">
+                            <ul>
+                                <li>Exterior Ceramic-Infused Deep Clean</li>
+                                <li>Towel Hand Dry</li>
+                                <li>Sealer Hand Wax (6-Month Protection)</li>
+                                <li>Wheel & Tire Ceramic Glow</li>
+                                <li>Windows In/Out with Rain-X</li>
+                                <li>Full Interior Deep Clean (Steam-Cleaned)</li>
+                                <li>Leather Ceramic Guard</li>
+                                <li>Dashboard & Trim UV Defense</li>
+                                <li>Door Shuts & Plastics Revival</li>
+                                <li>Air Freshener</li>
+                                <li>Exterior Vinyl Protectant</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-gold">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1554744512-d6c603f27c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');"></div>
+                    <div class="service-content">
+                        <h3><i class="fas fa-car-battery"></i> Engine Bay Service</h3>
+                        <div class="service-time">
+                            <i class="fas fa-clock"></i> ⏱ Time: 2 Hours
+                        </div>
+                        <div class="price">Price: LKR 20,000</div>
+                        <div class="service-features">
+                            <ul>
+                                <li>Engine Bay Steam Clean</li>
+                                <li>Trim Restoration</li>
+                                <li>Degreasing of engine components</li>
+                                <li>Protective coating application</li>
+                                <li>Plastic and rubber revitalization</li>
+                            </ul>
+                        </div>
+                        <p>Restore your engine bay to showroom condition with our professional steam cleaning service. Perfect for maintaining your vehicle's value and ensuring a clean engine compartment.</p>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <h3>Pricing Table</h3>
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Deluxe Wash</td>
+                            <td>Complete exterior and basic interior cleaning</td>
+                            <td>LKR 13,500-19,500</td>
+                            <td>1-2 hours</td>
+                        </tr>
+                        <tr>
+                            <td>Ultimate Shine</td>
+                            <td>Premium exterior with Sealer Hand Wax and full interior clean</td>
+                            <td>LKR 34,990-50,990</td>
+                            <td>4 hours</td>
+                        </tr>
+                        <tr>
+                            <td>Platinum Works</td>
+                            <td>Complete deep clean with steam cleaning and premium protection</td>
+                            <td>LKR 63,990-82,990</td>
+                            <td>6 hours</td>
+                        </tr>
+                        <tr>
+                            <td>Engine Bay Service</td>
+                            <td>Steam cleaning and trim restoration for engine compartment</td>
+                            <td>LKR 20,000</td>
+                            <td>2 hours</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <div class="text-center">
+                <h2>Trusted <span class="gold-text">Partners</span></h2>
+                <p>We work with leading businesses in Kandy</p>
+            </div>
+            
+            <div class="partner-logos">
+                <img src="images/klipartz.com.png" class="partner-logo" alt="Klipartz">
+                <img src="images/pngwing.com (1).png" class="partner-logo" alt="pngwing">
+                <img src="images/army.png" class="partner-logo" alt="army">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <h2>Why Choose <span class="gold-text">SparkVibe</span></h2>
+                    <p>At SparkVibe Detailing, we redefine mobile detailing with an uncompromising commitment to excellence. Our team of master detailers brings the showroom to your doorstep, combining artisan techniques with cutting-edge technology.</p>
+                    <p>We use premium products that enhance your vehicle's appearance while protecting its value. Each treatment is tailored to your specific make and model, ensuring optimal results.</p>
+                    <p>Our mobile service means you don't have to waste time driving to a detailing shop. We come to you at your home or office, working around your schedule to provide convenient, professional service.</p>
+                    <a href="#contact" class="btn btn-gold">Request a Consultation</a>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Luxury car detailing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Detailing Section -->
+    <section id="mobile" class="mobile-detailing">
+        <div class="container">
+            <h2 class="text-center">Our <span class="gold-text">Mobile Service</span></h2>
+            <p class="text-center">Experience premium detailing without leaving your home or office</p>
+            
+            <div class="mobile-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Convenient Scheduling</h3>
+                    <p>Book your appointment online or by phone at a time that works for you - we're available 7 days a week.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>We Come To You</h3>
+                    <p>Our fully-equipped mobile unit arrives at your specified location with all professional equipment and premium products.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Service Requirements</h3>
+                    <p>We require access to your water supply and electricity during the service. A standard outdoor faucet and outlet are sufficient.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Secure Payment</h3>
+                    <p>Payment is required upfront via cash, credit card, or digital payment to secure your appointment and materials.</p>
+                </div>
+            </div>
+            
+            <div class="payment-info">
+                <h3 class="text-center">Payment Information</h3>
+                <p>To ensure the highest quality service and materials, we require full payment at the time of booking. This allows us to reserve your time slot and prepare the specialized products needed for your vehicle.</p>
+                
+                <div class="notice-box">
+                    <h4>Important Notice</h4>
+                    <p>Our mobile detailing service will use your water and electricity supply during the service. Please ensure access to both is available at your location. We bring all other necessary equipment and supplies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="text-center">
+                <h2>Frequently <span class="gold-text">Asked Questions</span></h2>
+                <p>Answers to common questions about our services</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How long does detailing take?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Service duration depends on the package you choose. Our Deluxe Wash takes 1-2 hours, Ultimate Shine takes about 4 hours, and Platinum Works takes approximately 6 hours. Engine bay service adds about 2 hours to any package.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do I need to be present during the service?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No, you don't need to be present. We come to your location and can work while you're at work or home. We just need access to water and electricity.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What products do you use?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We use only high-quality, professional-grade solutions that are safe for your vehicle. Our Sealer Hand Wax provides 6 months of protection, and all our cleaning agents are pH-balanced to protect your vehicle's surfaces.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How often should I get my car detailed?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We recommend our Deluxe Wash every 2-4 weeks, Ultimate Shine every 3-6 months, and Platinum Works annually. The Sealer Hand Wax protection lasts 6 months with proper maintenance.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is the engine bay service safe for my vehicle?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! Our trained technicians use specialized techniques and products to safely clean your engine bay without damaging sensitive components. We avoid direct spraying of electrical connections and use appropriate cleaners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+   <!-- Video Section -->
+<section id="video" class="video-section">
+    <div class="container">
+        <h2 class="text-center">Our <span class="gold-text">Detailing Process</span></h2>
+        <p class="text-center">Witness the transformation with our meticulous approach</p>
+        
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/WOW5AupXi7c" 
+                    title="SparkVibe Detailing Process" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="text-center">Book Your <span class="gold-text">Detail</span></h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <p>076 334 1745</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <p>tennyson.detailing@gmail.com</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <p>Serving the Kandy Area</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <p>Monday - Saturday: 7AM - 6PM</p>
+                    </div>
+                    
+                    <h3 style="margin-top: 2rem;">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1BYX81yzzA/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/sparkvibedetailing?igsh=MW5vNGtqajFyM3hqMg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/message/RPYHX7SX6XYFA1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form Section -->
+                <div class="contact-form">
+                    <form id="bookingForm" action="https://formspree.io/f/mvgkqvzk" method="POST">
+                        <!-- Personal Information -->
+                        <h3>Personal Information</h3>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <input type="tel" name="whatsapp" placeholder="WhatsApp Number (for confirmation)">
+
+                        <!-- Vehicle Information -->
+                        <h3>Vehicle Information</h3>
+                        <select id="vehicleType" name="vehicle_type" required>
+                            <option value="">Select Vehicle Type</option>
+                            <option value="small_car">Small Car (Hatchback, Sedan)</option>
+                            <option value="medium_car">Medium Car (SUV, Crossover)</option>
+                            <option value="large_car">Large Car (Truck, Van, Luxury)</option>
+                        </select>
+                        
+                        <input type="text" name="make" placeholder="Make (e.g., Toyota)" required>
+                        <input type="text" name="model" placeholder="Model (e.g., Corolla)" required>
+                        <input type="number" name="year" placeholder="Year" min="1900" max="2025" required>
+                        <input type="text" name="color" placeholder="Color" required>
+
+                        <!-- Service Selection -->
+                        <h3>Service Details</h3>
+                        <select id="serviceType" name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="deluxe_wash">Deluxe Wash</option>
+                            <option value="ultimate_shine">Ultimate Shine</option>
+                            <option value="platinum_works">Platinum Works</option>
+                            <option value="engine_bay">Engine Bay Service</option>
+                            <option value="combo_deluxe_engine">Deluxe Wash + Engine Bay</option>
+                            <option value="combo_ultimate_engine">Ultimate Shine + Engine Bay</option>
+                            <option value="combo_platinum_engine">Platinum Works + Engine Bay</option>
+                        </select>
+
+                        <!-- Date/Time -->
+                        <input type="text" name="preferred_date" placeholder="Preferred Date/Time" onfocus="(this.type='datetime-local')">
+
+                        <!-- Service Location -->
+                        <h3>Service Location</h3>
+                        <input type="text" name="address" placeholder="Full Address (Street, City, ZIP Code)" required>
+
+                        <!-- Price Display -->
+                        <div id="priceDisplay" class="price-display">
+                            <h4>Estimated Price Breakdown</h4>
+                            <div class="price-item">
+                                <span>Base Service:</span>
+                                <span id="basePrice">LKR 0</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Vehicle Size Adjustment:</span>
+                                <span id="sizeAdjustment">+LKR 0</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Add-on Services:</span>
+                                <span id="addonPrice">+LKR 0</span>
+                            </div>
+                            <div class="price-total">
+                                <span>Total Estimated Price:</span>
+                                <span id="totalPrice">LKR 0</span>
+                            </div>
+                        </div>
+
+                        <!-- Service Notice -->
+                        <div class="notice-box">
+                            <h4>Service Requirements</h4>
+                            <p>By booking, you confirm that you will provide access to water and electricity at your location during the service window. Our team will bring all other necessary equipment and supplies.</p>
+                        </div>
+
+                        <!-- Payment Notice -->
+                        <div class="notice-box">
+                            <h4>Payment Policy</h4>
+                            <p>Full payment is required to confirm your booking. After submission, we'll contact you to confirm the booking date and payment process via WhatsApp or email (credit card, digital payment, or cash on-site).</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold">Schedule Your Service Now!</button>
+                    </form>
+
+                    <!-- Submission Message Container -->
+                    <div class="submission-message" id="formMessage">
+                        <p>Thank you for your booking request! We'll contact you within 24 hours to confirm your appointment details and complete payment.</p>
+                        <p><i class="fas fa-check-circle" style="color: var(--success);"></i> Your booking is pending confirmation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SparkVibe Detailing</h3>
+                    <p>Premium mobile car detailing services in Kandy, delivered to your home or office. Experience the convenience of professional auto care without leaving your property.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#mobile">Mobile Service</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Deluxe Wash</a></li>
+                        <li><a href="#services">Ultimate Shine</a></li>
+                        <li><a href="#services">Platinum Works</a></li>
+                        <li><a href="#services">Engine Bay Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:0763341745">076 334 1745</a></li>
+                        <li><a href="mailto:tennyson.detailing@gmail.com">tennyson.detailing@gmail.com</a></li>
+                        <li><a href="https://wa.me/message/RPYHX7SX6XYFA1" target="_blank">WhatsApp</a></li>
+                        <li>Serving Kandy Area</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> SparkVibe Detailing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Button -->
+    <div class="live-chat">
+        <div class="chat-btn">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+    </div>
+
+    <script>
+        // Pricing configuration
+        const pricing = {
+            services: {
+                deluxe_wash: { base: 13500, small: 0, medium: 3000, large: 6000 },
+                ultimate_shine: { base: 34990, small: 0, medium: 8000, large: 16000 },
+                platinum_works: { base: 63990, small: 0, medium: 10000, large: 19000 },
+                engine_bay: { base: 20000, small: 0, medium: 0, large: 0 },
+                combo_deluxe_engine: { base: 33500, small: 0, medium: 3000, large: 6000 },
+                combo_ultimate_engine: { base: 54990, small: 0, medium: 8000, large: 16000 },
+                combo_platinum_engine: { base: 83990, small: 0, medium: 10000, large: 19000 }
+            },
+            vehicleTypes: {
+                small_car: 'small',
+                medium_car: 'medium',
+                large_car: 'large'
+            }
+        };
+
+        // Format currency for LKR
+        function formatCurrency(amount) {
+            return 'LKR ' + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        // Mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+                document.querySelector('.hamburger i').classList.remove('fa-times');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+                
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Calculate and display price based on selections
+        function calculatePrice() {
+            const vehicleType = document.getElementById('vehicleType').value;
+            const serviceType = document.getElementById('serviceType').value;
+            const priceDisplay = document.getElementById('priceDisplay');
+
+            // Hide price display if selections aren't complete
+            if (!vehicleType || !serviceType) {
+                priceDisplay.classList.remove('active');
+                return;
+            }
+
+            // Get pricing details
+            const vehicleSize = pricing.vehicleTypes[vehicleType];
+            const servicePricing = pricing.services[serviceType];
+            
+            // Calculate prices
+            const basePrice = servicePricing.base;
+            const sizeAdjustment = servicePricing[vehicleSize];
+            const totalPrice = basePrice + sizeAdjustment;
+
+            // Update display
+            document.getElementById('basePrice').textContent = formatCurrency(basePrice);
+            document.getElementById('sizeAdjustment').textContent = sizeAdjustment > 0 ? `+${formatCurrency(sizeAdjustment)}` : '+LKR 0';
+            document.getElementById('totalPrice').textContent = formatCurrency(totalPrice);
+            
+            // Show price display
+            priceDisplay.classList.add('active');
+        }
+
+        // Add event listeners for price calculation
+        document.getElementById('vehicleType').addEventListener('change', calculatePrice);
+        document.getElementById('serviceType').addEventListener('change', calculatePrice);
+        
+        // Form submission handler
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            // Show submission message immediately
+            const formMessage = document.getElementById('formMessage');
+            formMessage.style.display = 'block';
+            
+            // Submit to Formspree in background
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                if (response.ok) {
+                    form.reset();
+                    formMessage.innerHTML = `
+                        <p>Thank you for your booking request! We'll contact you within 24 hours to confirm your appointment details and complete payment.</p>
+                        <p><i class="fas fa-check-circle" style="color: var(--success);"></i> Your booking is pending confirmation</p>
+                    `;
+                } else {
+                    formMessage.innerHTML = `
+                        <p>There was an error submitting your request. Please try again or contact us directly at 076 334 1745.</p>
+                        <p><i class="fas fa-exclamation-circle" style="color: var(--accent);"></i> Submission error</p>
+                    `;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                formMessage.innerHTML = `
+                    <p>There was an error submitting your request. Please try again or contact us directly at 076 334 1745.</p>
+                    <p><i class="fas fa-exclamation-circle" style="color: var(--accent);"></i> Network error</p>
+                `;
+            });
+            
+            // Scroll to message
+            formMessage.scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Live Chat Button
+        document.querySelector('.chat-btn').addEventListener('click', function() {
+            window.open('https://wa.me/message/RPYHX7SX6XYFA1', '_blank');
+        });
+        
+        // Add current year to copyright
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
